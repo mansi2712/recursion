@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+void printno(int n)
+{
+	if(n==1)
+	{
+		cout<<n<<" ";
+		return;
+	}
+	printno(n-1);
+	cout<<n<<" ";
+	return;
+}
+int main()
+{
+	int n;
+	cout<<"till where no are to be printed:"<<endl;
+	cin>>n;
+	printno(n);
+	return 0;
+}
